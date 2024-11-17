@@ -1,0 +1,121 @@
+body {
+    background-color: #212121;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#container {
+    background-color: gray;
+    color: black;
+    height: auto;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    place-items: center;
+    align-items: center;
+    border-radius: 25px;
+    background-image: url(./monthly-expenses-food-insurance-transport-and-mobile-communications-concept-chart-with-keywords-and-icons-on-light-blue-background-2D6PMNP.jpg); 
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#Input-section {
+    /* background-color: #212121; */
+    place-items: center;
+    border-radius: 20px;
+    width: 500px;
+    margin: auto;
+    align-items: center;
+}
+
+#expense-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#expense-form label {
+    grid-column: 1; 
+    text-align: center;
+    padding-right: 20px;
+    margin-left: 50px;
+    font-size: 35px;
+    font-weight: 900;
+    background-color: lightblue;
+    border-radius: 10px;
+    color: #212121;
+}
+
+#expense-form input,
+#expense-form select {
+    grid-column: 2;
+    margin-right: 50px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#expense-form button {
+    grid-column: span 2;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    height: 45px;
+    font-weight: 900;
+    font-size: large;
+    background-color: lightskyblue;
+    border-radius: 50px;
+}
+
+#expense-form button:hover {
+    background-color: purple;
+}
+
+#expenses {
+    background-color: gray;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#expenses li {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Common button styles */
+.button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #e53935;
+}
